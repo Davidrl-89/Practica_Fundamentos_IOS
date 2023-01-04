@@ -16,7 +16,6 @@
 		BB25FC882953BEAA00F83B02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB25FC872953BEAA00F83B02 /* SceneDelegate.swift */; };
 		BB25FC8F2953BEAB00F83B02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB25FC8E2953BEAB00F83B02 /* Assets.xcassets */; };
 		BB25FC922953BEAB00F83B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB25FC902953BEAB00F83B02 /* LaunchScreen.storyboard */; };
-		BB25FC9D2953BEAC00F83B02 /* Practica_Fundamentos_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB25FC9C2953BEAC00F83B02 /* Practica_Fundamentos_iOSTests.swift */; };
 		BB25FCA72953BEAC00F83B02 /* Practica_Fundamentos_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB25FCA62953BEAC00F83B02 /* Practica_Fundamentos_iOSUITests.swift */; };
 		BB25FCA92953BEAC00F83B02 /* Practica_Fundamentos_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB25FCA82953BEAC00F83B02 /* Practica_Fundamentos_iOSUITestsLaunchTests.swift */; };
 		BB25FCBA2956100000F83B02 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB25FCB82956100000F83B02 /* TableViewController.swift */; };
@@ -28,8 +27,14 @@
 		BB2C236B2956E9F7002A4596 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2C23692956E9F7002A4596 /* CollectionViewController.xib */; };
 		BB2C236F2956EDEA002A4596 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C236D2956EDEA002A4596 /* CollectionCell.swift */; };
 		BB2C23702956EDEA002A4596 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2C236E2956EDEA002A4596 /* CollectionCell.xib */; };
+		BB30751E296056FC001197BB /* heroeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB30751D296056FC001197BB /* heroeTest.swift */; };
+		BB307520296059AB001197BB /* TransformationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB30751F296059AB001197BB /* TransformationsTest.swift */; };
+		BB307521296059DB001197BB /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB815560295F33C8005796B1 /* Transformation.swift */; };
 		BB5982D1295B65AD00631655 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5982CF295B65AD00631655 /* DetailsViewController.swift */; };
 		BB5982D2295B65AD00631655 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5982D0295B65AD00631655 /* DetailsViewController.xib */; };
+		BB815561295F33C8005796B1 /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB815560295F33C8005796B1 /* Transformation.swift */; };
+		BB815565295F6115005796B1 /* TransformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB815563295F6115005796B1 /* TransformationViewController.swift */; };
+		BB815566295F6115005796B1 /* TransformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB815564295F6115005796B1 /* TransformationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +67,6 @@
 		BB25FC912953BEAB00F83B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB25FC932953BEAB00F83B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB25FC982953BEAC00F83B02 /* Practica-Fundamentos-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Practica-Fundamentos-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB25FC9C2953BEAC00F83B02 /* Practica_Fundamentos_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica_Fundamentos_iOSTests.swift; sourceTree = "<group>"; };
 		BB25FCA22953BEAC00F83B02 /* Practica-Fundamentos-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Practica-Fundamentos-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB25FCA62953BEAC00F83B02 /* Practica_Fundamentos_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica_Fundamentos_iOSUITests.swift; sourceTree = "<group>"; };
 		BB25FCA82953BEAC00F83B02 /* Practica_Fundamentos_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica_Fundamentos_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -75,8 +79,13 @@
 		BB2C23692956E9F7002A4596 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		BB2C236D2956EDEA002A4596 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		BB2C236E2956EDEA002A4596 /* CollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
+		BB30751D296056FC001197BB /* heroeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heroeTest.swift; sourceTree = "<group>"; };
+		BB30751F296059AB001197BB /* TransformationsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationsTest.swift; sourceTree = "<group>"; };
 		BB5982CF295B65AD00631655 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		BB5982D0295B65AD00631655 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		BB815560295F33C8005796B1 /* Transformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformation.swift; sourceTree = "<group>"; };
+		BB815563295F6115005796B1 /* TransformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationViewController.swift; sourceTree = "<group>"; };
+		BB815564295F6115005796B1 /* TransformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				BB1BAD0A295998B200CC1E3F /* Heroe.swift */,
+				BB815560295F33C8005796B1 /* Transformation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,7 +177,8 @@
 		BB25FC9B2953BEAC00F83B02 /* Practica-Fundamentos-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				BB25FC9C2953BEAC00F83B02 /* Practica_Fundamentos_iOSTests.swift */,
+				BB30751D296056FC001197BB /* heroeTest.swift */,
+				BB30751F296059AB001197BB /* TransformationsTest.swift */,
 			);
 			path = "Practica-Fundamentos-iOSTests";
 			sourceTree = "<group>";
@@ -193,6 +204,7 @@
 		BB25FCB629560E7600F83B02 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				BB815562295F60DF005796B1 /* TransformationView */,
 				BB5982CE295B658A00631655 /* DetailsView */,
 				BB2C23642956E600002A4596 /* HomeTabBar */,
 				BB1BACFF29598E8A00CC1E3F /* LoginView */,
@@ -255,6 +267,15 @@
 				BB5982D0295B65AD00631655 /* DetailsViewController.xib */,
 			);
 			path = DetailsView;
+			sourceTree = "<group>";
+		};
+		BB815562295F60DF005796B1 /* TransformationView */ = {
+			isa = PBXGroup;
+			children = (
+				BB815563295F6115005796B1 /* TransformationViewController.swift */,
+				BB815564295F6115005796B1 /* TransformationViewController.xib */,
+			);
+			path = TransformationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +389,7 @@
 				BB25FCC029561C5700F83B02 /* TableCell.xib in Resources */,
 				BB1BAD0329598EA600CC1E3F /* LoginViewController.xib in Resources */,
 				BB25FC8F2953BEAB00F83B02 /* Assets.xcassets in Resources */,
+				BB815566295F6115005796B1 /* TransformationViewController.xib in Resources */,
 				BB5982D2295B65AD00631655 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +421,8 @@
 				BB25FCBA2956100000F83B02 /* TableViewController.swift in Sources */,
 				BB1BAD062959969E00CC1E3F /* LocalDataLayer.swift in Sources */,
 				BB25FCBF29561C5700F83B02 /* TableCell.swift in Sources */,
+				BB815561295F33C8005796B1 /* Transformation.swift in Sources */,
+				BB815565295F6115005796B1 /* TransformationViewController.swift in Sources */,
 				BB1BAD0229598EA600CC1E3F /* LoginViewController.swift in Sources */,
 				BB2C236F2956EDEA002A4596 /* CollectionCell.swift in Sources */,
 				BB25FC882953BEAA00F83B02 /* SceneDelegate.swift in Sources */,
@@ -412,7 +436,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB25FC9D2953BEAC00F83B02 /* Practica_Fundamentos_iOSTests.swift in Sources */,
+				BB307520296059AB001197BB /* TransformationsTest.swift in Sources */,
+				BB307521296059DB001197BB /* Transformation.swift in Sources */,
+				BB30751E296056FC001197BB /* heroeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

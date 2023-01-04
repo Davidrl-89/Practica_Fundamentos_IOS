@@ -8,22 +8,62 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-
+    
+    @IBOutlet weak var heroeImageView: UIImageView!
+    @IBOutlet weak var heroeNameLabel: UILabel!
+    @IBOutlet weak var heroeDescLabel: UILabel!
+    @IBOutlet weak var transformationsButton: UIButton!
+    
+    var heroe: Heroe!
+    var transformation: [Transformation] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        transformationsButton.alpha = 0
+        title = heroe.name
+        
+        heroeImageView.setImage(url: heroe.photo)
+        heroeNameLabel.text = heroe.name
+        heroeDescLabel.text = heroe.description
+        
+        let token = LocalDataLayer.shared.getToken()
+        
+        NetworkLayer
+            .shared
+            .fetchTransformations(token: token, heroeId: heroe.id) { [weak self] allTrans, error in
+                guard let self = self else { return }
+                
+                if let allTrans = allTrans {
+                    self.transformation = allTrans
+                    
+                    if !self.transformation.isEmpty {
+                        DispatchQueue.main.async {
+                            self.transformationsButton.alpha = 1
+                        }
+                    }
+                    
+                } else {
+                    print("error fetching transformation", error?.localizedDescription ?? "")
+                }
+            }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
+    
+    @IBAction func transformationButtonTapped(_ sender: UIButton) {
+        
+        let transView = TransformationViewController()
+        transView.transformations = self.transformation.sorted(by: { transformation1, transformation2 in     // me devuelve lista ordenada
+            let transformation1Index = Int(transformation1.name.split(separator: ".").first ?? "") ?? .zero
+            let transformation2Index = Int(transformation2.name.split(separator: ".").first ?? "") ?? .zero
+            return transformation1Index < transformation2Index
+        })
+        
+        navigationController?.pushViewController(transView, animated: true)
+     }
+    
+    
 
 }

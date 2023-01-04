@@ -59,7 +59,7 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {               // Con esto pasamos a la vista de Details
         let heroe = heroes[indexPath.row]
         let detailsView = DetailsViewController()
-        
+        detailsView.heroe = heroe
         navigationController?.pushViewController(detailsView, animated: true)
     }
     

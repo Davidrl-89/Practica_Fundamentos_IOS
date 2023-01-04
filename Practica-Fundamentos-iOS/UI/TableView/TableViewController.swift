@@ -76,7 +76,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let heroe = heroes[indexPath.row]
         let detailsView = DetailsViewController()
-        
+        detailsView.heroe = heroe
         navigationController?.pushViewController(detailsView, animated: true)
     }
 
